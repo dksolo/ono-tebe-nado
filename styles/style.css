@@ -1,1 +1,403 @@
 /* место для вашего кода */
+body {
+    width: 1440px; 
+    height: 2844px;
+    background: #ffffff;
+
+    /*Основной грид для всего проекта */    
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 293px 757px 759px 668px 367px;
+    grid-template-areas:
+    "header" 
+    "jambotron"
+    "lots"
+    "about"
+    "footer" 
+    ;
+    align-items: center;
+
+}
+
+/* ЗАГОЛОВОК ЗАГОЛОВОК ЗАГОЛОВОК ЗАГОЛОВОК ЗАГОЛОВОК ЗАГОЛОВОК ЗАГОЛОВОК ЗАГОЛОВОК ЗАГОЛОВОК ЗАГОЛОВОК */
+
+.header {
+    grid-area: header;
+    width: 1340px;
+    height: 109px;
+    margin: 90px 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+    "header_menu_list . header_logo_black . header_contacts_list" 
+    ;
+    align-items: center;
+    /*grid-template-columns: 388px 148px 240px;*/
+
+
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+}
+
+.header_menu_list {
+    display: grid;
+    width: 388px;
+    grid-template-columns: 67px 168px 127px;
+    gap: 32px;
+    grid-area: header_menu_list;
+    align-items: center;
+}
+
+.header_menu_item {
+    list-style: circle;
+
+}
+
+.header_logo_black {
+    width: 148px;
+    height: 105px;
+    grid-area: header_logo_black;
+}
+
+.header_contacts_list {
+    grid-area: header_contacts_list;
+    list-style: none;
+}
+
+/* ДЖАМБОТРОН ДЖАМБОТРОН ДЖАМБОТРОН ДЖАМБОТРОН ДЖАМБОТРОН ДЖАМБОТРОН ДЖАМБОТРОН ДЖАМБОТРОН ДЖАМБОТРОН ДЖАМБОТРОН ДЖАМБОТРОН ДЖАМБОТРОН */
+
+.jambotron {
+    grid-area: jambotron;
+
+    width: 1440px;
+    height: 757px;
+    margin-top: 92;
+    margin-bottom: 180;
+    margin-left: 0;
+    margin-right: 0;
+
+    /* Настройка Бэкграунда */
+    /*background: #000000; */
+    background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* Настройка сетки джамботрона */ 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 520px 237px;
+    grid-template-areas:
+    "title" 
+    "jambo-foot" 
+    ;
+    align-items: center;
+
+}
+
+.title {
+    grid-area: title;    
+
+    width: 1440px;
+    padding-top: 165px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 30px; 
+    /*Межбуквенное расстояние в примере 30 пикселей и 60 пикселей
+    похоже, что в примере был добавлен дополнительный пробел, 
+    что и было реализовано в index.html */
+    text-transform: uppercase;
+
+    display: grid;
+    grid-template-rows: 115px 100px 100px;
+    gap: 20px;
+    grid-template-areas:
+    "txt-ono"
+    "txt-tebe"
+    "txt-nado";
+}
+
+.txt-ono{
+    justify-self: start;
+    align-self: start;
+    grid-area: txt-ono;
+
+}
+
+.txt-tebe{
+    justify-self: center;
+    align-self: start;
+    grid-area: txt-tebe;
+}
+
+.txt-nado{
+    justify-self: end;
+    align-self: start;
+    grid-area: txt-nado;
+}
+
+.jambo-foot {
+
+
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 422px 633px 385px;
+    grid-template-areas: ". subline bet-button";
+
+}
+
+.subline {
+    grid-area: subline;
+    align-self: center;
+}
+
+.bet-button {
+    margin-right: 50px;
+    width: 257px;
+    height: 52px;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    background: none;
+    grid-area: bet-button;
+    justify-self: end;
+}
+
+/* ЛОТЫ  ЛОТЫ  ЛОТЫ  ЛОТЫ  ЛОТЫ  ЛОТЫ  ЛОТЫ  ЛОТЫ  ЛОТЫ  ЛОТЫ  ЛОТЫ  ЛОТЫ  ЛОТЫ  ЛОТЫ  ЛОТЫ  ЛОТЫ  ЛОТЫ */ 
+
+.lots {
+    grid-area: lots;
+    padding: 180px 50px;
+}
+
+.lots-title {
+    color: #000;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-left: 40px;
+}
+
+.line_of_lots {
+    grid-area: line_of_lots;
+    padding: 30px 0;
+
+    display: grid;
+    grid-template-columns: 430px 430px 430px;
+    grid-template-rows: 450px;
+    gap: 25px;
+    align-items: center;
+}
+
+.lot-item {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    padding: 50px 40px;
+
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+    "lot-header"
+    "lot-text";
+}
+
+.lot-header {
+    grid-area: lot-header;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+}
+
+.lot-text {
+    grid-area: lot-text;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    align-self: end; 
+
+}
+
+.lot-ptanderson {
+    background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/card-lot-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lot-ulysses {
+    background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/card-lot-02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lot-kandinsky {
+    background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/card-lot-03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.more {
+    margin-left: 40px;
+}
+
+/* ОБ АУКЦИОНЕ ОБ АУКЦИОНЕ ОБ АУКЦИОНЕ ОБ АУКЦИОНЕ ОБ АУКЦИОНЕ ОБ АУКЦИОНЕ ОБ АУКЦИОНЕ ОБ АУКЦИОНЕ ОБ АУКЦИОНЕ ОБ АУКЦИОНЕ */
+
+.about {
+    grid-area: about;
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    display: grid;
+
+    grid-template-columns: 430px 885px;
+    grid-template-rows: 240px 240px;
+    column-gap: 25px;
+    row-gap: 8px;
+    grid-template-areas: 
+    "about-logo about-title"
+    ". about-text";
+}
+
+.about-logo {
+    grid-area: about-logo;
+    height: 240px;
+    width: 240px;
+    background-color: #000;
+    border-radius: 50%;
+    z-index: -1;
+    align-self: center;
+    justify-self: center;
+}
+
+.about-logo-img {
+    padding: 63px 46px;
+}
+
+.about-title {
+    grid-area: about-title;
+    color: #000;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    align-self: center;
+    justify-self: start;
+
+}
+
+.about-text{
+    grid-area: about-text;
+    color: #000;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    display: grid;
+
+    gap: 25px;
+
+
+}
+
+/* ПОДВАЛ ПОДВАЛ ПОДВАЛ ПОДВАЛ ПОДВАЛ ПОДВАЛ ПОДВАЛ ПОДВАЛ ПОДВАЛ ПОДВАЛ ПОДВАЛ ПОДВАЛ ПОДВАЛ ПОДВАЛ ПОДВАЛ ПОДВАЛ ПОДВАЛ ПОДВАЛ ПОДВАЛ */
+
+.footer {
+    width: 1340px;
+    height: 109px;
+    padding: 90px 50px;
+    display: grid;
+    grid-template-columns: 240px 149px 240px;
+
+    gap: 356px;
+    grid-template-areas:
+    "footer_contacts_list footer_menu_list footer_socials" 
+    ;
+    /*grid-template-columns: 388px 148px 240px;*/
+
+
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+}
+
+
+.footer_menu_list {
+    display: grid;
+    grid-area: footer_menu_list;
+}
+
+.footer_menu_item {
+    justify-self: center;
+
+}
+
+.footer_socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: footer_socials;
+    list-style: none;
+
+}
+
+.footer_socials_img {
+    width: 49px;
+    height: 49px;
+}
+
+.footer_contacts_list {
+    grid-area: footer_contacts_list;
+    list-style: none;
+}
+
+.list_item_no_bullet {
+    list-style: none;
+}
+
+.link_no_line {
+    text-decoration: none;
+}
