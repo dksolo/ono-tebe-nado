@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: 1px solid #f00 !important;
-  }
+  } */
   
 
 /* место для вашего кода */
@@ -362,7 +362,6 @@ body {
 .about-article{
     display: grid;
     grid-area: about-article;
-    /*min-width: 885px;*/
     grid-template-rows: repeat(2, 1rw);
     row-gap: 8px;
 }
