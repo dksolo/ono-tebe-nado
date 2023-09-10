@@ -25,7 +25,6 @@ body {
 
 .head-foot {
     /*grid-area: header;*/
-    min-width: 1100px;
     padding: 90px 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -33,7 +32,7 @@ body {
     justify-items: center;
 
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -64,15 +63,15 @@ body {
 
 .header_logo_black {
     width: 148px;
-    height: 105px;
+    /* height: 105px; */
     grid-area: header_logo_black;
     align-self: center;
     justify-self: center;
 }
 
 .contacts_list {
-    width: 240px;
-    height: 97px;
+    max-width: 240px;
+    /* height: 97px; */
     list-style: none;
     font-style: normal;
 }
@@ -94,41 +93,42 @@ body {
     width: 100%;
     
     /*margin-top: 90px; */
-    margin-bottom: 90px;
+    /*margin-bottom: 90px;*/
 
     /* Настройка Бэкграунда */
     /*background: #000000; */
     background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/cover.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
     /* Настройка сетки джамботрона */ 
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 520px 237px;
     grid-template-areas:
     "title" 
     "jambo-foot";
-    align-items: center;
+    align-items: center; */
 
 }
 
 .title {
-    grid-area: title;    
+    /*grid-area: title;    */
     width: 100%;
-    margin-top: 165px;
+    /*margin-top: 165px; */
 
-    padding: 90px 50px;
+    padding: 165px 50px 90px;
 
     color: #FFF;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 100px;
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
 
     display: grid;
-    grid-template-rows: 115px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
     gap: 20px;
     grid-template-areas:
     "txt-ono"
@@ -157,12 +157,12 @@ body {
 /* Continue from here */
 .jambo-foot {
     padding: 50px 50px 50px 50px;
-    margin-top: 85px;
+    /* margin-top: 85px; */
 
 
     color: #FFF;
     text-align: center;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -183,7 +183,7 @@ body {
     word-spacing: 20px;
     color: #FFF;
     text-align: center;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -198,7 +198,7 @@ body {
     height: 52px;
     color: #FFF;
     text-align: center;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -216,12 +216,12 @@ body {
 .lots {
     grid-area: lots;
     width: 100%;
-    padding: 80px 50px;
+    padding: 180px 50px 80px;
 }
 
 .lots-title {
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -240,7 +240,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 25px;
-    flex-grow: 1;
+    /*flex-grow: 1; */
 
     
     /* display: grid;
@@ -272,7 +272,7 @@ body {
 .lot-header {
     grid-area: lot-header;
     color: #FFF;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -283,7 +283,7 @@ body {
 .lot-text {
     grid-area: lot-text;
     color: #FFF;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -293,28 +293,22 @@ body {
 }
 
 .lot-ptanderson {
-    background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/card-lot-01.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/card-lot-01.jpg)no-repeat center center / contain;  
 }
 
 .lot-ulysses {
-    background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/card-lot-02.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/card-lot-02.jpg) no-repeat center center / contain;
 }
 
 .lot-kandinsky {
-    background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/card-lot-03.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/card-lot-03.jpg) no-repeat center center / contain;
 }
 
 .more {
     margin-left: 40px;
     margin-bottom: 2px;
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -362,7 +356,7 @@ body {
 .about-article{
     display: grid;
     grid-area: about-article;
-    grid-template-rows: repeat(2, 1rw);
+    /* grid-template-rows: repeat(2, 1rw); */
     row-gap: 8px;
 }
 
@@ -370,7 +364,7 @@ body {
     padding-top: 100px;
     padding-bottom: 100px;
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -383,7 +377,7 @@ body {
 
 .about-text{
     color: #000;
-    font-family: Raleway;
+    font-family: Raleway, Arial, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -432,10 +426,13 @@ body {
 }
 
 .footer_socials{    
-    width: 240px;
-    height: 48px;
+    /* width: 240px;
+    height: 48px; */
+    gap: 48px;
     justify-self: center;
     align-self: center;
+
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
