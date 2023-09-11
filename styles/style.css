@@ -256,6 +256,14 @@ body {
     min-height: 450px;
     width: 430px;
     padding: 50px 40px;
+    /* Настройки Бэкграунда */
+    background-position: center;
+    background-color: rgba(0 0 0 / 60%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+
 }
 
 .lot-article{
@@ -292,16 +300,22 @@ body {
 
 }
 
+
+
 .lot-ptanderson {
-    background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/card-lot-01.jpg)no-repeat center center / contain;  
+    /*background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/card-lot-01.jpg)no-repeat center center / contain; */
+    background-image: url(../images/card-lot-01.jpg);
 }
 
 .lot-ulysses {
-    background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/card-lot-02.jpg) no-repeat center center / contain;
+    /* background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/card-lot-02.jpg) no-repeat center center / contain;*/
+    background-image: url(../images/card-lot-02.jpg);
 }
 
 .lot-kandinsky {
-    background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/card-lot-03.jpg) no-repeat center center / contain;
+    /* background: linear-gradient(0deg, rgba(0 0 0 / 60%), rgba(0 0 0 / 60%)), url(../images/card-lot-03.jpg) no-repeat center center / contain; */
+    background-image: url(../images/card-lot-03.jpg); 
+
 }
 
 .more {
